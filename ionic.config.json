@@ -1,0 +1,7 @@
+{
+  "name": "front_stock",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
