@@ -32,6 +32,9 @@ import '@ionic/react/css/palettes/dark.system.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import SizePage from './pages/taille/SizePage';
+import InsertionForm from './components/insert/InsertionForm';
+import Example from './components/modal/Modal';
 
 setupIonicReact();
 
@@ -45,9 +48,22 @@ const App: React.FC = () => (
         <Route exact path="/">
           <Redirect to="/home" />
         </Route>
+
+        <Route exact path="/sizes">
+          <SizePage />
+        </Route>
+
+        {/* <Route exact path="/example">
+          <Example />
+        </Route>
+       */}
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>
+
+  
+
+  
 );
 
 export default App;
